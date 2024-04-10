@@ -10,7 +10,7 @@ HD
 attach(HD)
 ##### List all the column name
 names(HD)
-
+##### Splitting of dataset 
 set.seed(500)
 
 index <- sample(1:nrow(HD), round(0.75*nrow(HD)))  ### 75% fitting
