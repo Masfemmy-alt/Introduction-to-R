@@ -4,8 +4,11 @@ This is R Code for Beginners
 setwd(dir="C:/Users/user/Documents/ASSFBI573")
 ##### Import the Dataset
 HD <-read.csv("HD.csv")
+##### Show the Dataset
 HD
+##### Separate the column
 attach(HD)
+##### List all the column name
 names(HD)
 
 set.seed(500)
