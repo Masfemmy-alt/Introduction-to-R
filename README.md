@@ -2,7 +2,7 @@
 This is R Code for Beginners
 ### Get Directory
 setwd(dir="C:/Users/user/Documents/ASSFBI573")
-## Import the Dataset
+#### Import the Dataset
 HD <-read.csv("HD.csv")
 HD
 attach(HD)
