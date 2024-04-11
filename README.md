@@ -24,9 +24,11 @@ write.csv(HDfit, "HDfit.csv")
 write.csv(HDfit, "HDval.csv")
 
 HD1 <- nls(Height~1.3+a*(1-exp(-b*Dbh)),  data = HD,  start = list(a=10, b=0.7855))
+
 summary(HD1)
 
 HD2 <- nls(Height~1.3+a/(1+b*exp(-c*Dbh)), data = HD,  start = list(a=10, b=2, c=0.7855))
+
 summary(HD2)
 
 HD3 <-nls(Height~1.3+a*exp(-b*exp(-c*Dbh)),  data = HD, start = list (a=13, b=0.5, c=-0.5))
